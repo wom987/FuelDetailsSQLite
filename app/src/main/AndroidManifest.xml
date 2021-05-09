@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExamenPractico2">
         <activity android:name=".AddTransaction"></activity>
+        <activity android:name=".ShowPromedio"></activity>
         <activity android:name=".Inicio" />
         <activity
             android:name=".MainActivity"
