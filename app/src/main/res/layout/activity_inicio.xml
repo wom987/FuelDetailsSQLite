@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#979797"
     tools:context=".Inicio">
 
     <ImageView
@@ -34,9 +35,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnRegistro"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:lottie_rawRes="@raw/list"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true"/>
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/list" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/btnRegistro"
@@ -51,9 +52,9 @@
         app:layout_constraintEnd_toStartOf="@+id/btnCompra"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:lottie_rawRes="@raw/add"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true"/>
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/add" />
 
     <TextView
         android:id="@+id/txvRegistro"
