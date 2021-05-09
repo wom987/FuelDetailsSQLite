@@ -79,8 +79,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Galones" />
+                android:hint="Galones"
+                android:inputType="textPersonName" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -95,8 +95,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Costo" />
+                android:hint="Costo"
+                android:inputType="textPersonName" />
         </LinearLayout>
     </LinearLayout>
 
@@ -124,8 +124,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Galones" />
+            android:hint="Galones"
+            android:inputType="textPersonName" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -140,8 +140,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Costo" />
+            android:hint="Costo"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <TextView
@@ -168,8 +168,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Galones" />
+            android:hint="Galones"
+            android:inputType="textPersonName" />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -184,8 +184,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Costo" />
+            android:hint="Costo"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
 
