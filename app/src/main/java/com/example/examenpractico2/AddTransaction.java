@@ -73,13 +73,7 @@ public class AddTransaction extends AppCompatActivity {
                         startActivity(intent);
                     }else{
                         Toast.makeText(getApplicationContext(),"ERROR",Toast.LENGTH_SHORT).show();
-                        SweetAlertDialog dialog = null;
-                        dialog.setTitleText("Error!")
-                                .setContentText("Tu Factura no se guardo!")
-                                .setConfirmText("Oops")
-                                .setConfirmClickListener(null)
-                                .changeAlertType(SweetAlertDialog.ERROR_TYPE);
-                        dialog.show();
+
                     }
                 }else{
                     //empty values detected
