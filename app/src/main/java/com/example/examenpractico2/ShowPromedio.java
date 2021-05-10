@@ -21,6 +21,7 @@ import java.util.Calendar;
 import java.util.List;
 
 public class ShowPromedio extends AppCompatActivity {
+//A eliminar
 
     EditText date_in;
     EditText datefinal_in;
