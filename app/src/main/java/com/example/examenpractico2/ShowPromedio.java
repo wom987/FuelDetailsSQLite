@@ -45,10 +45,9 @@ public class ShowPromedio extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Promedio p = lst.get(position);
-                /*
-                TOAST
-                Toast.makeText(getBaseContext(),p.kilometrosDiesel,Toast.LENGTH_SHORT).show();
-                */
+
+                Toast.makeText(getBaseContext(),p.titulo,Toast.LENGTH_SHORT).show();
+
             }
         });
 

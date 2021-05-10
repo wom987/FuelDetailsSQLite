@@ -65,9 +65,7 @@ public class AddTransaction extends AppCompatActivity {
                     //Comfirmation Dialog
                     if(id>0){
 
-                        new SweetAlertDialog(AddTransaction.this)
-                                .setTitleText("Guardado!")
-                                .show();
+                       Toast.makeText(getApplicationContext(), "Agregado satisfactoriamente",Toast.LENGTH_SHORT);
                         limpiar();
                         Intent intent = new Intent(getApplicationContext(), Inicio.class);
                         startActivity(intent);
