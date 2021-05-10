@@ -4,18 +4,28 @@ import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.examenpractico2.db.CustomAdapter;
+import com.example.examenpractico2.db.Promedio;
+
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class ShowPromedio extends AppCompatActivity {
 
     EditText date_in;
     EditText datefinal_in;
+    ListView listViewPromedio;
+    List<Promedio> lst;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +35,21 @@ public class ShowPromedio extends AppCompatActivity {
         datefinal_in = findViewById(R.id.datefin_input);
         date_in.setInputType(InputType.TYPE_NULL);
         datefinal_in.setInputType(InputType.TYPE_NULL);
+
+        listViewPromedio = findViewById(R.id.lvPromedios);
+
+        CustomAdapter adapter = new CustomAdapter( this, GetData());
+        listViewPromedio.setAdapter(adapter);
+        listViewPromedio.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Promedio p = lst.get(position);
+                /*
+                TOAST
+                Toast.makeText(getBaseContext(),p.kilometrosDiesel,Toast.LENGTH_SHORT).show();
+                */
+            }
+        });
 
         date_in.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +64,14 @@ public class ShowPromedio extends AppCompatActivity {
                 showDateDialog2(datefinal_in);
             }
         });
+    }
+
+    private List<Promedio> GetData() {
+        lst = new ArrayList<>();
+        lst.add(new Promedio(1,R.mipmap.arriba,R.mipmap.cash,"","","DIESEL"));
+        lst.add(new Promedio(2,R.mipmap.arriba,R.mipmap.cash,"","","PREMIUM"));
+        lst.add(new Promedio(3,R.mipmap.arriba,R.mipmap.cash,"","","REGULAR"));
+        return  lst;
     }
 
     private void showDateDialog(final EditText date_in){
